@@ -11,11 +11,9 @@ CRUD operations for student records (create, read, update, delete)
 
 RESTful API endpoints built with Django REST Framework
 
-Modal-based forms for adding and editing student entries
-
 Bootstrap 5-based UI with responsive design
 
-Toast-style alert messages for all major user actions
+Alert messages for all major user actions
 
 Teachers can only see and manage their own students
 
@@ -41,21 +39,18 @@ On Windows: venv\Scripts\activate  # On Mac:source venv/bin/activate
 ## Install dependencies
 
 pip install -r requirements.txt
-If requirements.txt is not available, you can install the packages manually:
-
 
 pip install django djangorestframework djangorestframework-simplejwt
-Run migrations
 
-
+## Run migrations
 python manage.py makemigrations
 python manage.py migrate
-Create a superuser (optional but recommended)
 
 
+## Create a superuser
 python manage.py createsuperuser
-Start the development server
 
+## Start the development server
 
 python manage.py runserver
 
@@ -66,10 +61,10 @@ Navigate to the /register/ page to create a new teacher account.
 
 Log in using the (http://127.0.0.1:8000) page.
 
-Upon successful login, you’ll be redirected to /api/dashboard/, where the student management interface is available.
+Upon successful login, you’ll be redirected to http://127.0.0.1:8000/api/dashboard/, where the student management interface is available.
 
 From the dashboard, you can add, edit, or delete student records using modals.
 
-Each action displays a toast-style message to confirm success or errors.
+Each action displays a message to confirm success or errors.
 
 The logout button will clear your token and return you to the login screen.
