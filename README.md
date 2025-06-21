@@ -1,7 +1,8 @@
 Django Student Management Portal
+
 A simple and responsive teacher-student management portal built using Django and Django REST Framework (DRF) for the backend and HTML with Bootstrap for the frontend. The application supports JWT-based authentication and allows teachers to manage student records securely and efficiently.
 
-Features
+## Features
 User registration and login using JWT authentication (access tokens)
 
 Dashboard accessible only to authenticated users
@@ -18,14 +19,14 @@ Toast-style alert messages for all major user actions
 
 Teachers can only see and manage their own students
 
-Technology Stack
+## Technology Stack
 Backend: Django, Django REST Framework, SimpleJWT
 
 Frontend: HTML, CSS, JavaScript (Bootstrap 5)
 
 Database: SQLite (default, can be switched to any supported database)
 
-Installation
+## Installation
 Clone the repository
 
 
@@ -35,9 +36,9 @@ Create and activate a virtual environment
 
 
 python -m venv venv
-source venv/bin/activate      # On Windows: venv\Scripts\activate
-Install dependencies
+On Windows: venv\Scripts\activate  # On Mac:source venv/bin/activate
 
+## Install dependencies
 
 pip install -r requirements.txt
 If requirements.txt is not available, you can install the packages manually:
@@ -57,7 +58,8 @@ Start the development server
 
 
 python manage.py runserver
-How to Use
+
+## How to Use
 Visit http://127.0.0.1:8000 in your browser.
 
 Navigate to the /register/ page to create a new teacher account.
