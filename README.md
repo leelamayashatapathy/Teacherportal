@@ -46,6 +46,7 @@ pip install django djangorestframework djangorestframework-simplejwt
 
 ## Run migrations
 python manage.py makemigrations
+
 python manage.py migrate
 
 
