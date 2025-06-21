@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block title %}Register{% endblock %}
+{% block content %}
+<div class="container mt-5" style="max-width: 400px">
+  <h3 class="text-center">Register</h3>
+  <input type="text" id="regUsername" class="form-control mb-2" placeholder="Username" />
+  <input type="password" id="regPassword" class="form-control mb-2" placeholder="Password" />
+  <button class="btn btn-dark w-100" onclick="register()">Register</button>
+  <p class="text-center mt-3">
+    <a href="/" class="text-decoration-none">Already have an account? Login here</a>
+  </p>
+</div>
+{% endblock %}
