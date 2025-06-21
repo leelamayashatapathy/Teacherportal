@@ -29,12 +29,14 @@ Clone the repository
 
 
 git clone https://github.com/your-username/student-portal.git
+
 cd student-portal
-Create and activate a virtual environment
 
-
+## Create and activate a virtual environment
 python -m venv venv
-On Windows: venv\Scripts\activate  # On Mac:source venv/bin/activate
+
+On Windows: venv\Scripts\activate  
+On Mac:source venv/bin/activate
 
 ## Install dependencies
 
